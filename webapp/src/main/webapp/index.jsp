@@ -3,3 +3,4 @@
 <h2> Glad to see you here </h2>
 <h2> Deploying WAR file on Tomcat Application </h2>
 <h2> Deploying WAR file on Docer Container using Ansible Playbooks </h2>
+<h2> Deploying WAR file on AWS EC@ Instance </h2>
