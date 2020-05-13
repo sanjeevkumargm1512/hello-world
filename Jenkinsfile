@@ -3,8 +3,7 @@ pipeline{
      stages{
           stage('Git Clone'){
                steps{
-                    sh 'sudo rm -rf *'
-                    sh 'git clone git@github.com:sanjeevkumargm/hello-world.git'
+                   git credentialsId: 'github', url: 'https://github.com/sanjeevkumargm/hello-world/'
                }
           }
      }
