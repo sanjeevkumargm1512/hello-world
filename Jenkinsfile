@@ -3,7 +3,7 @@ pipeline{
      stages{
           stage('Git Checkout'){
                steps{
-                    git url: 'ssh://github.com/sanjeevkumargm/hello-world/'
+                    git credentialsId: 'github', url: 'https://github.com/sanjeevkumargm/hello-world'
                }
           }
      }
