@@ -1,9 +1,9 @@
 pipeline{
     agent any
      stages{
-          stage('Git Checkout'){
+          stage('Git Clone'){
                steps{
-                    git credentialsId: 'github', url: 'https://github.com/sanjeevkumargm/hello-world'
+                    sh 'sudo rm -rf *;sudo git clone ssh://github.com/sanjeevkumargm/hello-world'
                }
           }
      }
