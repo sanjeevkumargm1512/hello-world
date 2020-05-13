@@ -12,8 +12,8 @@ pipeline{
           }
           stage('Maven Build'){
                steps{
-                   git credentialsId: 'github', url: 'https://github.com/sanjeevkumargm/hello-world/'
+                   sh "mvn clean package"
                }
-         
+          }
      }
 }
