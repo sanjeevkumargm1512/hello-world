@@ -8,7 +8,8 @@ pipeline{
           stage('Git Clone'){
                steps{
                    sh "rm -rf *"
-                   git credentialsId: 'github', url: 'https://github.com/sanjeevkumargm/hello-world/'
+                   git 'https://github.com/sanjeevkumargm/hello-world'
+//                   git credentialsId: 'github', url: 'https://github.com/sanjeevkumargm/hello-world/'
                }
           }
           stage('Maven Build'){
